@@ -15,7 +15,7 @@ function Layouttailwind() {
       document.querySelector('html')?.classList.remove('dark');
 
     }
-  } , [])
+  } , [theme]);
   return (
     <>
     <div className='flex justify-end mx-10 my-5'>
