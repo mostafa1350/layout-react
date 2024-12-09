@@ -5,8 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: 'class',
+  // ============== Start Theme ====================
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'mirodposht': "url('../public/images/Mirodposht.jpg')",
+        'mirodposhtDark': "url('../public/images/Mirodposht-dark.jpg')"
+    },
+   }
   },
+  // =============   End theme ==================
+
   plugins: [],
 }

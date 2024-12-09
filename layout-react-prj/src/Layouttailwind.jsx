@@ -18,7 +18,9 @@ function Layouttailwind() {
   }
   // ==========================================
   return (
-    <div className='min-h-screen bg-cover bg-center bg-[url("../public/images/Mirodposht.jpg")] h-screen dark:bg-black dark:bg-[url("../public/images/Mirodposht-dark.jpg")]'>
+    // we can use background image by tailwindConfig.config.js in the "theme" section
+    // or we can use this format => bg-[url("../public/images/Mirodposht-dark.jpg")]
+    <div className='bg-no-repeat m-0 p-0 bg-cover bg-center bg-mirodposht h-screen dark:bg-black dark:bg-mirodposhtDark'>
     <div className='flex justify-end mx-10 my-5'>
       <button onClick={changeMode}>
         {theme==="dark" ? 
