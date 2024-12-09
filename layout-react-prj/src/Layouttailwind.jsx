@@ -18,7 +18,7 @@ function Layouttailwind() {
   }
   // ==========================================
   return (
-    <div className='bg-white h-screen dark:bg-black'>
+    <div className='min-h-screen bg-cover bg-center bg-[url("../public/images/Mirodposht.jpg")] h-screen dark:bg-black dark:bg-[url("../public/images/Mirodposht-dark.jpg")]'>
     <div className='flex justify-end mx-10 my-5'>
       <button onClick={changeMode}>
         {theme==="dark" ? 
