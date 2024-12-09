@@ -42,7 +42,18 @@ function Layouttailwind() {
         <button className='btn'>Button Me 1</button>
         <button className='btn'>Button Me 2</button>
         <button className='btn'>Button Me 3</button>
+      </div>
 
+      {/* =========================================== */}
+      {/* use flex row and flex col in some situation  */}
+      {/* refer to sm,md,lg,xl,2xl responsive tailwindConfig */}
+      {/* if we use "sm", min-width is 640px and so on ... */}
+      {/* in this example, defual is flex-col */}
+      <div className='flex flex-col sm:flex-row  md:flex-col lg:flex-row mt-20 text-yellow-400'>
+        <div className='bg-blue-300 sm:w-[25%] md:w-full lg:w-[10%] h-[100px] flex justify-center items-center text-yellow-900'>Flex 1</div>
+        <div className='bg-blue-500 sm:w-[25%] md:w-full lg:w-[20%] h-[100px] flex justify-center items-center'>Flex 2</div>
+        <div className='bg-blue-700 sm:w-[25%] md:w-full lg:w-[30%] h-[100px] flex justify-center items-center'>Flex 3</div>
+        <div className='bg-blue-900 sm:w-[25%] md:w-full lg:w-[40%] h-[100px] flex justify-center items-center'>Flex 4</div>
       </div>
     </div>
   )
