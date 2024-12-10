@@ -16,6 +16,8 @@ function Layouttailwind() {
   const changeMode = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
   }
+
+  const AfterText="Lorem lksadjf lkasdlkf sadlfkj asdklas"
   // ==========================================
   return (
     // we can use background image by tailwindConfig.config.js in the "theme" section
@@ -51,8 +53,12 @@ function Layouttailwind() {
       {/* in this example, defual is flex-col */}
       <div className='flex flex-col sm:flex-row  md:flex-col lg:flex-row mt-20 text-yellow-400'>
         <div className='bg-blue-300 sm:w-[25%] md:w-full lg:w-[10%] h-[100px] flex justify-center items-center text-yellow-900'>Flex 1</div>
-        <div className='bg-blue-500 sm:w-[25%] md:w-full lg:w-[20%] h-[100px] flex justify-center items-center '>Flex 2</div>
-        <div className='bg-blue-700 sm:w-[25%] md:w-full lg:w-[30%] h-[100px] flex justify-center items-center'>Flex 3</div>
+        <div className='bg-blue-500 sm:w-[25%] md:w-full lg:w-[20%] h-[100px] flex justify-center items-center '>
+          <p className='cursor-pointer text-[30px] hover:before:text-green-500 hover:content-["HHHH"] hover:after:top-[-30px] hover:before:content-["Hello worlds"]'>
+            Flex 2
+          </p>
+        </div>
+        <div className='bg-blue-700 sm:w-[25%] md:w-full lg:w-[30%] h-[100px] flex justify-center items-center text-[36px] hover:text-[0px] hover:after:content-["After_Hover_Div3"] hover:after:text-[30px] '>Before</div>
         <div className='bg-blue-900 sm:w-[25%] md:w-full lg:w-[40%] h-[100px] flex justify-center items-center'>Flex 4</div>
       </div>
     </div>
