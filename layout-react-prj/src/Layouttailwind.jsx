@@ -51,11 +51,14 @@ function Layouttailwind() {
       {/* refer to sm,md,lg,xl,2xl responsive tailwindConfig */}
       {/* if we use "sm", min-width is 640px and so on ... */}
       {/* in this example, defual is flex-col */}
+      <div className='flex justify-center items-center my-10'>
+        <h1 className='text-yellow-300 text-[30px] p-8 border-red-200 border-2  bg-slate-500/65'>Please Resize the Page to See the div status Changes</h1>
+      </div>
       <div className='flex flex-col sm:flex-row  md:flex-col lg:flex-row mt-20'>
-        <div className='bg-blue-300/65 text-red-700 opacity-95 backdrop-blur-[2px] sm:w-[25%] md:w-full lg:w-[10%] h-[100px] flex justify-center items-center text-[22px] hover:text-[0px] hover:after:content-["After_Hover_Div1"] hover:after:text-[16px] hover:after:text-green-800'>Div1</div>
-        <div className='bg-blue-500/65 text-red-300 opacity-95 backdrop-blur-[2px] sm:w-[25%] md:w-full lg:w-[20%] h-[100px] flex justify-center items-center text-[22px] hover:text-[0px] hover:after:content-["After_Hover_Div2"] hover:after:text-[30px] hover:after:text-green-500'>Div2</div>
-        <div className='bg-blue-700/65 text-red-200 opacity-95 backdrop-blur-[2px] sm:w-[25%] md:w-full lg:w-[30%] h-[100px] flex justify-center items-center text-[22px] hover:text-[0px] hover:after:content-["After_Hover_Div3"] hover:after:text-[30px] hover:after:text-green-300'>Div3</div>
-        <div className='bg-blue-900/65 text-red-100 opacity-95 backdrop-blur-[2px] sm:w-[25%] md:w-full lg:w-[40%] h-[100px] flex justify-center items-center text-[22px] hover:text-[0px] hover:after:content-["After_Hover_Div4"] hover:after:text-[30px] hover:after:text-green-200'>Div4</div>
+        <div className='bg-blue-300/65 border-yellow-200 border-[1px] text-red-700 opacity-95 backdrop-blur-[2px] sm:w-[25%] md:w-full lg:w-[10%] h-[100px] flex justify-center items-center text-[22px] hover:text-[0px] hover:after:content-["After_Hover_Div1"] hover:after:text-[16px] hover:after:text-green-800'>Div1</div>
+        <div className='bg-blue-500/65 border-yellow-200 border-[1px] text-red-300 opacity-95 backdrop-blur-[2px] sm:w-[25%] md:w-full lg:w-[20%] h-[100px] flex justify-center items-center text-[22px] hover:text-[0px] hover:after:content-["After_Hover_Div2"] hover:after:text-[30px] hover:after:text-green-500'>Div2</div>
+        <div className='bg-blue-700/65 border-yellow-200 border-[1px] text-red-200 opacity-95 backdrop-blur-[2px] sm:w-[25%] md:w-full lg:w-[30%] h-[100px] flex justify-center items-center text-[22px] hover:text-[0px] hover:after:content-["After_Hover_Div3"] hover:after:text-[30px] hover:after:text-green-300'>Div3</div>
+        <div className='bg-blue-900/65 border-yellow-200 border-[1px] text-red-100 opacity-95 backdrop-blur-[2px] sm:w-[25%] md:w-full lg:w-[40%] h-[100px] flex justify-center items-center text-[22px] hover:text-[0px] hover:after:content-["After_Hover_Div4"] hover:after:text-[30px] hover:after:text-green-200'>Div4</div>
       </div>
     </div>
   )
