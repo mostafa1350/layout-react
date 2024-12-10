@@ -51,15 +51,11 @@ function Layouttailwind() {
       {/* refer to sm,md,lg,xl,2xl responsive tailwindConfig */}
       {/* if we use "sm", min-width is 640px and so on ... */}
       {/* in this example, defual is flex-col */}
-      <div className='flex flex-col sm:flex-row  md:flex-col lg:flex-row mt-20 text-yellow-400'>
-        <div className='bg-blue-300 sm:w-[25%] md:w-full lg:w-[10%] h-[100px] flex justify-center items-center text-yellow-900'>Flex 1</div>
-        <div className='bg-blue-500 sm:w-[25%] md:w-full lg:w-[20%] h-[100px] flex justify-center items-center '>
-          <p className='cursor-pointer text-[30px] hover:before:text-green-500 hover:content-["HHHH"] hover:after:top-[-30px] hover:before:content-["Hello worlds"]'>
-            Flex 2
-          </p>
-        </div>
-        <div className='bg-blue-700 sm:w-[25%] md:w-full lg:w-[30%] h-[100px] flex justify-center items-center text-[36px] hover:text-[0px] hover:after:content-["After_Hover_Div3"] hover:after:text-[30px] '>Before</div>
-        <div className='bg-blue-900 sm:w-[25%] md:w-full lg:w-[40%] h-[100px] flex justify-center items-center'>Flex 4</div>
+      <div className='flex flex-col sm:flex-row  md:flex-col lg:flex-row mt-20'>
+        <div className='bg-blue-300/65 text-red-700 opacity-95 backdrop-blur-[2px] sm:w-[25%] md:w-full lg:w-[10%] h-[100px] flex justify-center items-center text-[22px] hover:text-[0px] hover:after:content-["After_Hover_Div1"] hover:after:text-[16px] hover:after:text-green-800'>Div1</div>
+        <div className='bg-blue-500/65 text-red-300 opacity-95 backdrop-blur-[2px] sm:w-[25%] md:w-full lg:w-[20%] h-[100px] flex justify-center items-center text-[22px] hover:text-[0px] hover:after:content-["After_Hover_Div2"] hover:after:text-[30px] hover:after:text-green-500'>Div2</div>
+        <div className='bg-blue-700/65 text-red-200 opacity-95 backdrop-blur-[2px] sm:w-[25%] md:w-full lg:w-[30%] h-[100px] flex justify-center items-center text-[22px] hover:text-[0px] hover:after:content-["After_Hover_Div3"] hover:after:text-[30px] hover:after:text-green-300'>Div3</div>
+        <div className='bg-blue-900/65 text-red-100 opacity-95 backdrop-blur-[2px] sm:w-[25%] md:w-full lg:w-[40%] h-[100px] flex justify-center items-center text-[22px] hover:text-[0px] hover:after:content-["After_Hover_Div4"] hover:after:text-[30px] hover:after:text-green-200'>Div4</div>
       </div>
     </div>
   )
